@@ -1,0 +1,48 @@
+body,
+html {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  color: #888;
+  background: #fcfcfc; }
+
+header {
+  padding: 20px; }
+  header a {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 20px;
+    color: #888; }
+
+main {
+  padding: 20px; }
+
+form {
+  width: 100%;
+  max-width: 500px; }
+  form div {
+    padding: 10px 0; }
+  form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px; }
+  form textarea {
+    height: 200px; }
+  form input[type=text], form input[type=password], form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    font-family: monospace;
+    color: #888; }
+
+button {
+  padding: 5px;
+  min-width: 150px;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  background: transparent;
+  color: #888; }
+
+/*# sourceMappingURL=style.css.map*/

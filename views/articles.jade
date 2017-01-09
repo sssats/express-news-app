@@ -1,0 +1,26 @@
+section.add-article
+    form(method='post' action='/articles/create' enctype='multipart/form-data')
+        div
+            label Title
+                br
+                input.title(type='text' name='title')
+        div
+            label File
+                br
+                input.upload(type='file' name='image')
+        div
+            label content
+                br
+                textarea.article-conten(name='body')
+        input(type='submit')
+
+
+
+section.articles
+    - for (var i in articles)
+        article(style="border:1px solid")
+            img(src='/images/' + articles[i].picture width=100)
+            h2
+                a(href='/articles/' + articles[i]._id)= articles[i].title
+            p=  articles[i].body
+            a(href='/articles/delete/' + articles[i]._id) delete
