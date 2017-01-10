@@ -16,7 +16,7 @@ class createArticleController {
       formData.append('body', body);
     }
     if (image) {
-      formData.append('file', image);
+      formData.append('image', image);
     }
 
     return formData;

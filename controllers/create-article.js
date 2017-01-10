@@ -14,9 +14,6 @@ router.get('/list', function(req, res, next) {
 router.post('/create', function(req, res, next) {
   var data = req.body;
   var dateHash = Date.now();
-  console.log(req.boyd);
-  console.log('---------');
-  console.log(req.files);
 
   if (req.files.image.name.length > 0) {
     req.files.image.mv('./public/images/' + dateHash + '_' + req.files.image.name, function(err) {
@@ -34,8 +31,6 @@ router.post('/create', function(req, res, next) {
       }
     });
   }
-
-
 });
 
 module.exports = router;

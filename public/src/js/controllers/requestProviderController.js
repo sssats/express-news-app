@@ -1,8 +1,3 @@
-var defaultHeaders = {
-  'Accept': 'application/json',
-  'Content-Type': 'application/json'
-};
-
 class requestProviderController {
 
   static get(url) {
@@ -13,9 +8,8 @@ class requestProviderController {
       .then(json => json);
   }
 
-  static post(url, data, headers = defaultHeaders) {
+  static post(url, data) {
     return fetch(url, {
-        headers: headers,
         method: "POST",
         body: data
       })
